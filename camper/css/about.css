@@ -54,37 +54,37 @@ body {
   	color: black;
 }
 #footer{
-	text-align:center;
-	clear:right;
-	padding: 20px;
+    text-align:center;
+    clear:right;
+    padding: 20px;
   	text-align: center;
   	background: #ddd;
   	margin-top: 20px;
 }
 #main #left{
-	width:300px;
-	background:#fff;
-	float:left;
-	margin-top:10px;
+    width:300px;
+    background:#fff;
+    float:left;
+    margin-top:10px;
 }
 
 	
 #main #right{
-	width: 850px;
-	background: #fff;
-	float: right;
-	margin-top: 10px;
-	padding-left:20px;
+    width: 850px;
+    background: #fff;
+    float: right;
+    margin-top: 10px;
+    padding-left:20px;
 }
 
 #main #left #menu_left h2{
-	background:#333;
-	height:40px;
-	margin-top:0px;
-	text-align:center;
-	line-height:40px;
-	color:#fff;
-	text-indent:30px;
+    background:#333;
+    height:40px;
+    margin-top:0px;
+    text-align:center;
+    line-height:40px;
+    color:#fff;
+    text-indent:30px;
 }
 
 @keyframes animationtest {
