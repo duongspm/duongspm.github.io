@@ -21,7 +21,7 @@
         <a href="index.html">Trang chủ</a>
         <a href="About.html">Giới thiệu</a>
         <div class="dropdown">
-        	<a class="dropbtn" href="#">Sản phẩm</a>
+        	<a class="dropbtn" href="index.html">Sản phẩm</a>
             <div class="dropdown-content">
               <a href="clothes.html">Áo | CLOTHES</a>
               <a href="pants.html">Quần | PANTS</a>
@@ -33,30 +33,30 @@
     </div>
     <div id="banner">
     	<aside id="slide">
-        <div class="slide-pager">
-				<div class="slide-control-prev">«</div>
-				<div class="slide-control-next">»</div>
-			</div>
-    	<div class="slide-container">
-				<div class="slide-stage">
-					<div class="slide-image"><a href="#"><img src="images/banner_degey.png"/></a></div>
-					<div class="slide-image"><a href="#"><img src="images/banner_degey1.png"/></a></div>
-					<div class="slide-image"><a href="#"><img src="images/banner_bad.png"/></a></div>
-					<div class="slide-image"><a href="#"><img src="images/banner_bad1.png"/></a></div>
-					<div class="slide-image"><a href="#"><img src="images/banner_streetgang.png"/></a></div>
-					<div class="slide-image"><a href="#"><img src="images/banner_streetgang1.png"/></a></div>
-					<div class="slide-image"><a href="#"><img src="images/banner_bad2.png"/></a></div>
-					<div class="slide-image"><a href="#"><img src="images/banner_bad3.png"/></a></div>
-                    <div class="slide-image"><a href="#"><img src="images/banner_degey2.png"/></a></div>
-				</div>
-		</div>
+            <div class="slide-pager">
+                    <div class="slide-control-prev">«</div>
+                    <div class="slide-control-next">»</div>
+                </div>
+            <div class="slide-container">
+                    <div class="slide-stage">
+                        <div class="slide-image"><a href="#"><img src="images/banner_degey.png"/></a></div>
+                        <div class="slide-image"><a href="#"><img src="images/banner_degey1.png"/></a></div>
+                        <div class="slide-image"><a href="#"><img src="images/banner_bad.png"/></a></div>
+                        <div class="slide-image"><a href="#"><img src="images/banner_bad1.png"/></a></div>
+                        <div class="slide-image"><a href="#"><img src="images/banner_streetgang.png"/></a></div>
+                        <div class="slide-image"><a href="#"><img src="images/banner_streetgang1.png"/></a></div>
+                        <div class="slide-image"><a href="#"><img src="images/banner_bad2.png"/></a></div>
+                        <div class="slide-image"><a href="#"><img src="images/banner_bad3.png"/></a></div>
+                        <div class="slide-image"><a href="#"><img src="images/banner_degey2.png"/></a></div>
+                    </div>
+            </div>
         </aside>
     </div>
     
     <div id="main">
         <div id="left">
         	<div id="card">
-            <h2>BRAND|Thương hiệu</h2>
+                <h2>BRAND|Thương hiệu</h2>
                 <h3>Dergey</h3>
                 <a href="https://degrey.vn/"><img src="images/degrey.png" width="300" height="158"/></a>
                 <br/><i class="fas fa-map-marker-alt"></i> Địa chỉ: Khu vực TP.HCM
@@ -68,174 +68,216 @@
                 <br />Q.3: 224 Lý Chính Thắng</p>
                 <p><i class="fas fa-phone-alt"></i> Hỗ trợ / Mua hàng:0336311117</p>
                 <p><i class="fas fa-envelope"></i> degrey.vn@gmail.com</p>
-             </div>
+            </div>
                 
-             <div class="card">
+            <div class="card">
                 <h3>Streetgang</h3>
                 <a href="https://streetgang.vn/"><img src="images/streetgang.png"/></a>
                 <p><i class="fas fa-map-marker-alt"></i> Địa chỉ:554 Điện Biên Phủ Phường 22 Quận Bình Thạnh Thành Phố Hồ Chí Minh</p>
                 <p><i class="fas fa-phone-alt"></i> Hỗ trợ / Mua hàng:0767060995</p>
                 <p><i class="fas fa-envelope"></i> streetgangco.ltd@gmail.com</p>
-             </div>
-             <br/>
-             <div class="card_fl">
+            </div>
+            <br/>
+            <div class="card_fl">
                 <h3><i class="fas fa-spinner fa-spin"></i>Follow Me</h3>
                 <p>Facebook: Trần Văn Dương</p>
                 <p>Instagram: duongg_v</p>
                 <p>Website: camper.vn</p>
-              </div>
-              <br/>
-              <br/>
-              <div class="calendar">
-					<script language="javascript">
-                    	monthnames = new Array("January", "February", "March", "April"," May", "June", "July", "August", "September", "October", "November", "December");
-                    	var linkcount=0;
-                    
-                    	function addlink(month, day, href){
-							var entry = new Array(3);
-							entry [0] = month;
-							entry[1] = day;
-							entry[2] = href;
-							this[linkcount++] = entry;
-						}
-						Array.prototype.addlink= addlink;
-						linkdays = new Array();
-						monthdays = new Array(12);
-						monthdays[0]=31;
-						monthdays[1]=28;
-						monthdays[2]=31;
-						monthdays[3]=30;
-						monthdays[4]=31;
-						monthdays[5]=30;
-						monthdays[6]=31;
-						monthdays[7]=31;
-						monthdays[8]=30;
-						monthdays[9]=31;
-						monthdays[10]=30;
-						monthdays[11]=31;
-						todayDate= new Date();
-						thisday=todayDate.getDay();
-						thisdate = todayDate.getDate();
-						thismonth=todayDate.getMonth();
-						thisyear=todayDate.getYear();
-						thisyear=thisyear % 100;
-						thisyear = ((thisyear <50)?(2000+thisyear):(1900+thisyear));
-						if(((thisyear%4==0)&& !(thisyear%100==0))||(thisyear%400==0))monthdays[1]++;
-						startspaces= thisdate;
-						while(startspaces>7) startspaces -=7;
-						startspaces = thisday - startspaces + 1;
-						if(startspaces<0)startspaces+=7;
-						document.write("<table>");
-						document.write("<tr><td colspan=7 class='monthyear'>"+ monthnames[thismonth] + " " + thisyear + "</td></tr>");
-						document.write("<tr class=weektitle'>");
-						document.write("<td align=center>Sun</td>");
-						document.write("<td align=center>Mon</td>");
-						document.write("<td align=center>Tus</td>");
-						document.write("<td align=center>Wed</td>");
-						document.write("<td align=center>Thu</td>");
-						document.write("<td align=center>Fri</td>");
-						document.write("<td align=center>Sat</td>");
-						document.write("</tr>");
-						document.write("<tr>");
-						for(s=0;s<startspaces;s++){
-							document.write("<td> </td>");
-						}
-						count=1;
-						while(count <= monthdays[thismonth]){
-							for(b= startspaces;b<7;b++)
-						{
-						linktrue=false;
-						document.write("<td class='weekday'>");
-						for(c=0;c<linkdays.length;c++){
-							if(linkdays[c] !=null){
-								if((linkdays[c][0]== thismonth + 1) && (linkdays[c][1]==count)){
-									document.write("<a href=\"" + linkdays[c][2] + "\">");
-									linktrue = true;
-								}
-							}
-						}
-							if(count==thisdate){
-								document.write("<font color='FF0000'><strong>");
-							}
-							if(count<=monthdays[thismonth]){
-								document.write(count);
-							} else {
-								document.write(" ");
-							}
-							if(count==thisdate){
-								document.write("</strong></font>");
-							} if(linktrue)
-								document.write("</a>");
-								document.write("</td>");
-								count++;
-							}
-							document.write("</tr>");
-							document.write("<tr>");
-							startspaces=0;
-						}
-						document.write("</table>");
-                    </script>
-                </div>
+            </div>
+            <br/>
+            <br/>
+            <div class="calendar">
+                <script language="javascript">
+                    monthnames = new Array("January", "February", "March", "April"," May", "June", "July", "August", "September", "October", "November", "December");
+                    var linkcount=0;
+                
+                    function addlink(month, day, href){
+                        var entry = new Array(3);
+                        entry [0] = month;
+                        entry[1] = day;
+                        entry[2] = href;
+                        this[linkcount++] = entry;
+                    }
+                    Array.prototype.addlink= addlink;
+                    linkdays = new Array();
+                    monthdays = new Array(12);
+                    monthdays[0]=31;
+                    monthdays[1]=28;
+                    monthdays[2]=31;
+                    monthdays[3]=30;
+                    monthdays[4]=31;
+                    monthdays[5]=30;
+                    monthdays[6]=31;
+                    monthdays[7]=31;
+                    monthdays[8]=30;
+                    monthdays[9]=31;
+                    monthdays[10]=30;
+                    monthdays[11]=31;
+                    todayDate= new Date();
+                    thisday=todayDate.getDay();
+                    thisdate = todayDate.getDate();
+                    thismonth=todayDate.getMonth();
+                    thisyear=todayDate.getYear();
+                    thisyear=thisyear % 100;
+                    thisyear = ((thisyear <50)?(2000+thisyear):(1900+thisyear));
+                    if(((thisyear%4==0)&& !(thisyear%100==0))||(thisyear%400==0))monthdays[1]++;
+                    startspaces= thisdate;
+                    while(startspaces>7) startspaces -=7;
+                    startspaces = thisday - startspaces + 1;
+                    if(startspaces<0)startspaces+=7;
+                    document.write("<table>");
+                    document.write("<tr><td colspan=7 class='monthyear'>"+ monthnames[thismonth] + " " + thisyear + "</td></tr>");
+                    document.write("<tr class=weektitle'>");
+                    document.write("<td align=center>Sun</td>");
+                    document.write("<td align=center>Mon</td>");
+                    document.write("<td align=center>Tus</td>");
+                    document.write("<td align=center>Wed</td>");
+                    document.write("<td align=center>Thu</td>");
+                    document.write("<td align=center>Fri</td>");
+                    document.write("<td align=center>Sat</td>");
+                    document.write("</tr>");
+                    document.write("<tr>");
+                    for(s=0;s<startspaces;s++){
+                        document.write("<td> </td>");
+                    }
+                    count=1;
+                    while(count <= monthdays[thismonth]){
+                        for(b= startspaces;b<7;b++)
+                    {
+                    linktrue=false;
+                    document.write("<td class='weekday'>");
+                    for(c=0;c<linkdays.length;c++){
+                        if(linkdays[c] !=null){
+                            if((linkdays[c][0]== thismonth + 1) && (linkdays[c][1]==count)){
+                                document.write("<a href=\"" + linkdays[c][2] + "\">");
+                                linktrue = true;
+                            }
+                        }
+                    }
+                        if(count==thisdate){
+                            document.write("<font color='FF0000'><strong>");
+                        }
+                        if(count<=monthdays[thismonth]){
+                            document.write(count);
+                        } else {
+                            document.write(" ");
+                        }
+                        if(count==thisdate){
+                            document.write("</strong></font>");
+                        } if(linktrue)
+                            document.write("</a>");
+                            document.write("</td>");
+                            count++;
+                        }
+                        document.write("</tr>");
+                        document.write("<tr>");
+                        startspaces=0;
+                    }
+                    document.write("</table>");
+                </script>
+            </div>
         </div>	
         
         <div id="right">
             <h2>Áo|Clothes</h2>
-                <div class="sanpham"> 
-                    <p class="tensanpham">Bardeb Wire Shirt</p>
-                    <img class="hinhanh" src="images/Ao-bardeb-wire-shirt-350.png">
-                    <p class="gia">Giá bán: <span class="gia">350,000VNĐ</span></p>
-                    <p class="gia">Giá camp: <span class="gia">150,000VNĐ</span></p>
-                    <a href="#"><img class="nutchonmua" src="images/Chonmua.png"></a>
-                </div>
-                <div class="sanpham"> 
-                    <p class="tensanpham">Blur Shirt</p>
-                    <img class="hinhanh" src="images/Ao-Blur-shirt-350.png">
-                    <p class="gia">Giá bán: <span class="gia">350,000VNĐ</span></p>
-                    <p class="gia">Giá camp: <span class="gia">150,000VNĐ</span></p>
-                    <a href="#"><img class="nutchonmua" src="images/Chonmua.png"></a>
-                </div>
-                <div class="sanpham"> 
-                    <p class="tensanpham">Rabbit n Frined Tee</p>
-                    <img class="hinhanh" src="images/Ao-Rabbit-n-Friend-Tee320.png">
-                    <p class="gia">Giá bán: <span class="gia">320,000VNĐ</span></p>
-                    <p class="gia">Giá camp: <span class="gia">180,000VNĐ</span></p>
-                    <a href="#"><img class="nutchonmua" src="images/Chonmua.png"></a>
-                </div>
-                <div class="sanpham"> 
-                    <p class="tensanpham">Rabbit n Homies</p>
-                    <img class="hinhanh" src="images/Ao-Rabbit-n-Homies320.png">
-                    <p class="gia">Giá bán: <span class="gia">320,000VNĐ</span></p>
-                    <p class="gia">Giá camp: <span class="gia">180,000VNĐ</span></p>
-                    <a href="#"><img class="nutchonmua" src="images/Chonmua.png"></a>
-                </div>
-                <div class="sanpham"> 
-                    <p class="tensanpham">Rabbit World</p>
-                    <img class="hinhanh" src="images/Ao-Rabbit-world320.png">
-                    <p class="gia">Giá bán: <span class="gia">320,000VNĐ</span></p>
-                    <p class="gia">Giá camp: <span class="gia">180,000VNĐ</span></p>
-                    <a href="#"><img class="nutchonmua" src="images/Chonmua.png"></a>
-                </div>
-                <div class="sanpham"> 
-                    <p class="tensanpham">Rabbit Purple Hell</p>
-                    <img class="hinhanh" src="images/Ao-RabbitPurpleHell350.png">
-                    <p class="gia">Giá bán: <span class="gia">350,000VNĐ</span></p>
-                    <p class="gia">Giá camp: <span class="gia">150,000VNĐ</span></p>
-                    <a href="#"><img class="nutchonmua" src="images/Chonmua.png"></a>
-                </div>
-                <div class="sanpham"> 
-                    <p class="tensanpham">Tamagotchi Jacket</p>
-                    <img class="hinhanh" src="images/Ao-TamagotchiJacket-550.png">
-                    <p class="gia">Giá bán: <span class="gia">550,000VNĐ</span></p>
-                    <p class="gia">Giá camp: <span class="gia">150,000VNĐ</span></p>
-                    <a href="#"><img class="nutchonmua" src="images/Chonmua.png"></a>
-                </div>
-                <div class="sanpham"> 
-                    <p class="tensanpham">Badhabit</p>
-                    <img class="hinhanh" src="images/Badhabit-350.png">
-                    <p class="gia">Giá bán: <span class="gia">350,000VNĐ</span></p>
-                    <p class="gia">Giá camp: <span class="gia">150,000VNĐ</span></p>
-                    <a href="#"><img class="nutchonmua" src="images/Chonmua.png"></a>
-                </div>
+            <div class="sanpham"> 
+                <p class="tensanpham">Bardeb Wire Shirt</p>
+                <img class="hinhanh" src="images/Ao-bardeb-wire-shirt-350.png">
+                <p class="gia">Giá bán: <span class="gia">350,000VNĐ</span></p>
+                <p class="gia">Giá camp: <span class="gia">150,000VNĐ</span></p>
+                <a href="#"><img class="nutchonmua" src="images/Chonmua.png"></a>
+            </div>
+            <div class="sanpham"> 
+                <p class="tensanpham">Blur Shirt</p>
+                <img class="hinhanh" src="images/Ao-Blur-shirt-350.png">
+                <p class="gia">Giá bán: <span class="gia">350,000VNĐ</span></p>
+                <p class="gia">Giá camp: <span class="gia">150,000VNĐ</span></p>
+                <a href="#"><img class="nutchonmua" src="images/Chonmua.png"></a>
+            </div>
+            <div class="sanpham"> 
+                <p class="tensanpham">Rabbit n Frined Tee</p>
+                <img class="hinhanh" src="images/Ao-Rabbit-n-Friend-Tee320.png">
+                <p class="gia">Giá bán: <span class="gia">320,000VNĐ</span></p>
+                <p class="gia">Giá camp: <span class="gia">180,000VNĐ</span></p>
+                <a href="#"><img class="nutchonmua" src="images/Chonmua.png"></a>
+            </div>
+            <div class="sanpham"> 
+                <p class="tensanpham">Rabbit n Homies</p>
+                <img class="hinhanh" src="images/Ao-Rabbit-n-Homies320.png">
+                <p class="gia">Giá bán: <span class="gia">320,000VNĐ</span></p>
+                <p class="gia">Giá camp: <span class="gia">180,000VNĐ</span></p>
+                <a href="#"><img class="nutchonmua" src="images/Chonmua.png"></a>
+            </div>
+            <div class="sanpham"> 
+                <p class="tensanpham">Rabbit World</p>
+                <img class="hinhanh" src="images/Ao-Rabbit-world320.png">
+                <p class="gia">Giá bán: <span class="gia">320,000VNĐ</span></p>
+                <p class="gia">Giá camp: <span class="gia">180,000VNĐ</span></p>
+                <a href="#"><img class="nutchonmua" src="images/Chonmua.png"></a>
+            </div>
+            <div class="sanpham"> 
+                <p class="tensanpham">Rabbit Purple Hell</p>
+                <img class="hinhanh" src="images/Ao-RabbitPurpleHell350.png">
+                <p class="gia">Giá bán: <span class="gia">350,000VNĐ</span></p>
+                <p class="gia">Giá camp: <span class="gia">150,000VNĐ</span></p>
+                <a href="#"><img class="nutchonmua" src="images/Chonmua.png"></a>
+            </div>
+            <div class="sanpham"> 
+                <p class="tensanpham">Tamagotchi Jacket</p>
+                <img class="hinhanh" src="images/Ao-TamagotchiJacket-550.png">
+                <p class="gia">Giá bán: <span class="gia">550,000VNĐ</span></p>
+                <p class="gia">Giá camp: <span class="gia">150,000VNĐ</span></p>
+                <a href="#"><img class="nutchonmua" src="images/Chonmua.png"></a>
+            </div>
+            <div class="sanpham"> 
+                <p class="tensanpham">Badhabit</p>
+                <img class="hinhanh" src="images/Badhabit-350.png">
+                <p class="gia">Giá bán: <span class="gia">350,000VNĐ</span></p>
+                <p class="gia">Giá camp: <span class="gia">150,000VNĐ</span></p>
+                <a href="#"><img class="nutchonmua" src="images/Chonmua.png"></a>
+            </div>
+            <div class="sanpham"> 
+                <p class="tensanpham">Eater</p>
+                <img class="hinhanh" src="images/Ao-Eater320.png">
+                <p class="gia">Giá bán: <span class="gia">320,000VNĐ</span></p>
+                <p class="gia">Giá camp: <span class="gia">180,000VNĐ</span></p>
+                <a href="#"><img class="nutchonmua" src="images/Chonmua.png"></a>
+            </div>
+            <div class="sanpham"> 
+                <p class="tensanpham">Kawaii Invasion</p>
+                <img class="hinhanh" src="images/Ao-KawaiiInvasion350.png">
+                <p class="gia">Giá bán: <span class="gia">350,000VNĐ</span></p>
+                <p class="gia">Giá camp: <span class="gia">150,000VNĐ</span></p>
+                <a href="#"><img class="nutchonmua" src="images/Chonmua.png"></a>
+            </div>
+            <div class="sanpham"> 
+                <p class="tensanpham">Prena</p>
+                <img class="hinhanh" src="images/Ao-Prena320.png">
+                <p class="gia">Giá bán: <span class="gia">320,000VNĐ</span></p>
+                <p class="gia">Giá camp: <span class="gia">180,000VNĐ</span></p>
+                <a href="#"><img class="nutchonmua" src="images/Chonmua.png"></a>
+            </div>
+            <div class="sanpham"> 
+                <p class="tensanpham">Quan Tum</p>
+                <img class="hinhanh" src="images/Ao-QuanTum320.png">
+                <p class="gia">Giá bán: <span class="gia">320,000VNĐ</span></p>
+                <p class="gia">Giá camp: <span class="gia">180,000VNĐ</span></p>
+                <a href="#"><img class="nutchonmua" src="images/Chonmua.png"></a>
+            </div>
+            <div class="sanpham"> 
+                <p class="tensanpham">Badhabit Insede Out</p>
+                <img class="hinhanh" src="images/Ao-RabbitInsedeOut320.png">
+                <p class="gia">Giá bán: <span class="gia">320,000VNĐ</span></p>
+                <p class="gia">Giá camp: <span class="gia">180,000VNĐ</span></p>
+                <a href="#"><img class="nutchonmua" src="images/Chonmua.png"></a>
+            </div>
+            <div class="sanpham"> 
+                <p class="tensanpham">Badhabit Toy</p>
+                <img class="hinhanh" src="images/Ao-RabbitToy320.png">
+                <p class="gia">Giá bán: <span class="gia">350,000VNĐ</span></p>
+                <p class="gia">Giá camp: <span class="gia">150,000VNĐ</span></p>
+                <a href="#"><img class="nutchonmua" src="images/Chonmua.png"></a>
+            </div>
         </div>
     </div>
     
