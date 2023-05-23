@@ -1,7 +1,8 @@
 :root {
     /* fonts */
     --h2-title: Poppins;
-  
+    --h1-title: Poppins;
+
     /* font sizes */
     --button-size: 10px;
     --body-size: 16px;
