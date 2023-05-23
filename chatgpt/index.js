@@ -70,7 +70,7 @@ function sendMessage() {
         buttonIcon.classList.remove('fas', 'fa-spinner', 'fa-pulse');
     }).catch((err) => {
         if (err.name === 'TypeError') {
-            appendMessage('bot', 'Error : Check Your Api Key!');
+            appendMessage('bot', 'Error : Check Your Api Key! Lâu lâu hay bị dị, miễn phí mà 😂😂');
             buttonIcon.classList.add('fa-solid', 'fa-paper-plane');
             buttonIcon.classList.remove('fas', 'fa-spinner', 'fa-pulse');
         }
