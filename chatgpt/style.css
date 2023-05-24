@@ -192,3 +192,24 @@ body{
     background-color: #9859b7;
     padding: 10px 8px 11px;
 }
+@media only screen and (max-width: 850px){
+    .list{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        padding:0 20px;
+    }
+    .items{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 550px){
+    .list{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding:0 20px;
+    }
+    .info {
+        margin: 0 auto;
+        padding: 30px 0 0 0;
+    }
+}

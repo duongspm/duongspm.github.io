@@ -121,6 +121,43 @@ body{
   justify-content: space-between;
   align-items: center;
   gap: 50px;
+  position: relative;
+}
+.hero::before{
+  content: "";
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  left: -30%;
+  top: 40%;
+  background: linear-gradient(45deg,#007536,#146c54);
+  animation:  object1 6s linear infinite;
+  z-index: -1;
+}
+.hero::after{
+  content: "";
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  left: 35%;
+  top: 2%;
+  background: linear-gradient(45deg,#007536,#146c54);
+  animation:  object2 6s linear infinite;
+  z-index: -1;
+}
+@keyframes object1{
+  50%{
+    left: -25%;
+    top: 41%;
+  }
+}
+@keyframes object2{
+  50%{
+    left: 36%;
+    top: 1%;
+  }
 }
 .hero-left{
   width: 50%;
@@ -152,11 +189,28 @@ body{
 .hero-right{
   width: 50%;
   overflow: hidden;
+  position: relative;
 }
 .hero-avt{
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   object-fit: cover;
+
+}
+.hero-right img{
+  position: relative;
+  height: 100%;
+  width: calc(130% - 80px);
+  top: -70px;
+  right: 50px;
+  /* transform: rotateX(180deg); */
+  animation: animateUser 4s linear infinite;
+}
+@keyframes animateUser{
+  50%{
+    right: 20px;
+    top: -40px;
+  }
 }
 .hero-name{
   color: var(--color-heading);
@@ -170,7 +224,7 @@ body{
 .hero-desc{
   font-size: 16px;
   font-weight: 300;
-  line-height: 20px;
+  line-height: 25px;
   color: var(--color-heading);
 }
 .button__icon{
@@ -240,14 +294,16 @@ body{
  }
  .button {
   position: relative;
-  width: 170px;
+  width: 180px;
   height: 40px;
   cursor: pointer;
   display: flex;
   align-items: center;
-  border: 1px solid #17795E;
-  background-color: #209978;
+  border: 1px solid #303c42;
+  background-color: #3d535f;
   overflow: hidden;
+  margin: 0 auto;
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
 }
 
 .button, .button__icon, .button__text {
@@ -257,15 +313,15 @@ body{
 .button .button__text {
   transform: translateX(22px);
   color: #fff;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .button .button__icon {
   position: absolute;
-  transform: translateX(130px);
+  transform: translateX(140px);
   height: 100%;
   width: 39px;
-  background-color: #17795E;
+  background-color: #303c42;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -277,7 +333,8 @@ body{
 }
 
 .button:hover {
-  background: #17795E;
+  background: #303c42;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
 }
 
 .button:hover .button__text {
@@ -285,7 +342,7 @@ body{
 }
 
 .button:hover .button__icon {
-  width: 148px;
+  width: 100%;
   transform: translateX(0);
 }
 
