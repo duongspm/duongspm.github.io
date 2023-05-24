@@ -131,7 +131,8 @@ body{
   border-radius: 50%;
   left: -30%;
   top: 40%;
-  background: linear-gradient(45deg,#007536,#146c54);
+  background: rgb(72,155,51);
+  background: linear-gradient(90deg, rgba(72,155,51,1) 22%, rgba(253,29,29,1) 50%, #EB6796 100%);
   animation:  object1 6s linear infinite;
   z-index: -1;
 }
@@ -143,7 +144,10 @@ body{
   border-radius: 50%;
   left: 35%;
   top: 2%;
-  background: linear-gradient(45deg,#007536,#146c54);
+  background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+
+  /* background: radial-gradient(circle, 0%, 100%); */
   animation:  object2 6s linear infinite;
   z-index: -1;
 }
@@ -184,7 +188,11 @@ body{
 .hero-title-name{
   font-size: 20px;
   font-weight: 900;
-  color: var(--color-secondary);
+  /* color: var(--color-secondary); */
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }
 .hero-right{
   width: 50%;
@@ -359,3 +367,9 @@ body{
 
   }
 }
+.counter{
+  background-color:black;
+  color:yellow;
+  font-weight:bold;
+}
+  
