@@ -3,6 +3,7 @@ const chatLog = document.getElementById('chat-log'),
     sendButton = document.getElementById('send-button'),
     buttonIcon = document.getElementById('button-icon'),
     info = document.querySelector('.info');
+    containercontent = document.querySelector('.container-content');
 
 sendButton.addEventListener('click', sendMessage);
 userInput.addEventListener('keydown', (event) => {
@@ -79,6 +80,7 @@ function sendMessage() {
 
 function appendMessage(sender, message) {
     info.style.display = "none";
+    containercontent.style.display = "none";
     // change send button icon to loading using fontawesome
     buttonIcon.classList.remove('fa-solid', 'fa-paper-plane');
     buttonIcon.classList.add('fas', 'fa-spinner', 'fa-pulse');
