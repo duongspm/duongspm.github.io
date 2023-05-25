@@ -33,13 +33,87 @@ button {
   --color-primary: #007536;
   --color-secondary:#EB6796;
   --color-heading:#3d535f;
+  --header-height: 3rem;
+
+  /*========== Colors ==========*/
+  --first-color: #069C54;
+  --first-color-alt: #048654;
+  --title-color: #393939;
+  --text-color: #707070;
+  --text-color-light: #A6A6A6;
+  --body-color: #FBFEFD;
+  --container-color: #FFFFFF;
+
+  /*========== Font and typography ==========*/
+  --body-font: 'Poppins', sans-serif;
+  --biggest-font-size: 2.25rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== Margenes ==========*/
+  --mb-1: .5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
 }
+/*========== BASE ==========*/
+*,::before,::after{
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+@media screen and (min-width: 768px){
+  :root{
+    --biggest-font-size: 4rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+/*========== Variables Dark theme ==========*/
+body.dark-theme{
+  --title-color: #F1F3F2;
+  --text-color: #C7D1CC;
+  --body-color: #1D2521;
+  --container-color: #27302C;
+}
+
+/*========== Button Dark/Light ==========*/
+.change-theme{
+  position: absolute;
+  right: 1rem;
+  top: 1.8rem;
+  color: var(--text-color);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
 body{
   font-family: 'Poppins', sans-serif;
   min-height: 100vh;
   font-weight: 400;
   font-size: 16px;
   line-height: 1;
+  /* overflow: hidden; */
 }
 .wrapper{
   max-width: 1200px;
@@ -122,14 +196,15 @@ body{
   align-items: center;
   gap: 50px;
   position: relative;
+  padding-top: 40px;
 }
 .hero::before{
   content: "";
   position: absolute;
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  width: 400px;
   border-radius: 50%;
-  left: -30%;
+  left: -20%;
   top: 40%;
   background: rgb(72,155,51);
   background: linear-gradient(90deg, rgba(72,155,51,1) 22%, rgba(253,29,29,1) 50%, #EB6796 100%);
@@ -195,29 +270,48 @@ background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%
 
 }
 .hero-right{
-  width: 50%;
-  overflow: hidden;
+  /* width: 50%; */
+  /* overflow: hidden; */
   position: relative;
 }
-.hero-avt{
-  width: 80%;
-  height: 80%;
-  object-fit: cover;
+.hero-right::after{
+  content: "";
+  position: absolute;
+  width: 240px;
+  height: 70px;
+  background-color: rgba(225, 84, 133, 0.48);
+  top: 20%;
+  left: 52%;
+  transform: translateX(-50%) rotate(22deg);
+  transition: 0.2s linear;
+  animation: animateGlass 4s linear infinite;
 
 }
-.hero-right img{
-  position: relative;
-  height: 100%;
-  width: calc(130% - 80px);
+@keyframes animateGlass{
+  50%{
+    width: 260px;
+    /* top: 21%; */
+    left: 51%;
+    background-color: rgba(225, 84, 133, 0.724);
+  }
+}
+.hero-avt{
+  position: absolute;
+  width: 100%;
+  height: 120%;
+  object-fit: cover;
   top: -70px;
   right: 50px;
   /* transform: rotateX(180deg); */
   animation: animateUser 4s linear infinite;
+  border-bottom-left-radius: 32%;
+  border-bottom-right-radius: 20%;
 }
+
 @keyframes animateUser{
   50%{
-    right: 20px;
-    top: -40px;
+    right: 40px;
+    top: -60px;
   }
 }
 .hero-name{
@@ -225,6 +319,7 @@ background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%
   font-size: 80px;
   font-weight: 900;
 }
+
 .multitext{
   color: var(--color-secondary);
   text-transform: capitalize;
@@ -232,7 +327,7 @@ background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%
 .hero-desc{
   font-size: 16px;
   font-weight: 300;
-  line-height: 25px;
+  line-height: 25px; 
   color: var(--color-heading);
 }
 .button__icon{
@@ -361,15 +456,42 @@ background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%
 .button:active {
   border: 1px solid #146c54;
 }
+
+.counter{
+  background-color:black;
+  color:yellow;
+  font-weight:bold;
+}
+/* ========= SCROOL UP ========= */
+.scrollup{
+  position: fixed;
+  right: 1rem;
+  bottom: 0;
+  background-color: var(--color-secondary);
+  opacity: .8;
+  /* padding: 10px; */
+  width: 37px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  z-index: 999;
+  transition: 0.2s linear;
+  bottom: 20px;
+}
+.scrollup:hover{
+  background-color: #e15486;
+} 
+.scrollup__icon{
+  font-size: 18px;
+  color: floralwhite;
+}
+/* Show scroll */
+
 @media (max-width: 480px) {
   .App {
     padding: 0.5rem 1rem;
 
   }
 }
-.counter{
-  background-color:black;
-  color:yellow;
-  font-weight:bold;
-}
-  

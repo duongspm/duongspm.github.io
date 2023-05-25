@@ -60,25 +60,35 @@
           Tran Van Duong
         </span>
         <span class="hero-name">
-          Tôi là <span class="multitext">Coder</span> 
+          Tôi là <span class="multitext"></span> 
         </span>
         <div class="hero-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, amet adipisci dolores nulla dolore</div>
-        <!-- <button class="hero-buttom">
-          <span>Tải CV của tôi <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span></span>
-          
-        </button> -->
         <button class="button" type="button">
           <span class="button__text">Download CV</span>
           <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span>
         </button>
       </div>
       <div class="hero-right">
-        <img src="" id="splash" alt="">
         <img class="hero-avt" src="./avata.png" alt="">
+        <img class="hero-bg" src="../assets/images/imgbg.png" alt="">
       </div>
     </div>
   </div>
+  <!--======================== Scroll-up ========================-->
+  <a href="" class="scrollup" id="scroll-up">
+    <i class="fa-solid fa-arrow-up scrollup__icon"></i>
+  </a>
   <!-- script -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    var typingEffect = new Typed(".multitext",{strings : ["Coder","PHP Developer","Website Developer"],
+    loop : true,
+    typeSpeed: 100,
+    backSpeed: 80,
+    backDelay: 1500,
+    cursorChar: '_',
+  })
+  </script>
   <script src="./assets/js/profile.js"></script>
 
   <b>You visited this page <SCRIPT>page_counter(jcount);</SCRIPT> time(s).</b>
@@ -102,58 +112,5 @@
 </body>
 </html>
 
-
-<!-- <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hello</title>
-  <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-
-  <link rel="stylesheet" href="/clock/assets/css/styles.css">
-</head>
-
-<body>
-
-  <div class="profile-cart">
-    <div class="images"><img src="avata.png" alt=""></div>
-    <h1>Trần Văn Dương</h1>
-    <p>Xin chào tôi là một lập trình viên trẻ lương ngàn đô</p>
-    <div class="social-area">
-      <a id="fb" href="https://www.facebook.com/duongspm"><i class="fab fa-facebook"></i></a>
-        <script language="javascript">
-          var button = document.getElementById("fb");
-          button.onclick = function(){
-              alert("Nhớ kết bạn fb với mình nha ^^");
-          }
-        </script>
-      <a id="ins" href="https://www.instagram.com/duongg_v/?hl=vi"><i class="fab fa-instagram"></i></a>
-        <script language="javascript">
-          var button = document.getElementById("ins");
-          button.onclick = function(){
-              alert("Follow mình nha ^^");
-          }
-        </script>
-      <a id="youtube" href="https://www.youtube.com/channel/UCvXij5ArMkI6FDcwn62b68A"><i class="fab fa-youtube" aria-hidden="true"></i></a>
-        <script language="javascript">
-          var button = document.getElementById("youtube");
-          button.onclick = function(){
-              alert("Cho mình xin 1 like và đăng ký kênh của mình nhoa ^^");
-          }
-        </script>
-      <a href="https://linktr.ee/duongspm"><i class="fab fa-tree" aria-hidden="true"></i></a>
-      <a href="https://github.com/duongspm/"> <i class="fab fa-github" aria-hidden="true"></i></a>
-      <a href="https://duongspm.github.io/clock"><i class="fab fa-clock-o" aria-hidden="true"></i></a>
-      <a href="https://duongspm.github.io/profile"><i class="fa fa-user" aria-hidden="true"></i></a>
-      <a href="https://duongspm.github.io/camper/login.html"><i class="fab fa-sign-in" aria-hidden="true"></i></a>
-    </div>
-  </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
-</body>
-</html> -->
 
 
