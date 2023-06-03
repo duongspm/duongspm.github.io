@@ -277,33 +277,33 @@ background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%
 
 }
 .hero-right{
-  /* width: 50%; */
+  width: 50%;
   /* overflow: hidden; */
   position: relative;
 }
 .hero-right::after{
   content: "";
   position: absolute;
-  width: 240px;
+  width: 261px;
   height: 70px;
   background-color: rgba(225, 84, 133, 0.48);
-  top: 20%;
-  left: 52%;
-  transform: translateX(-50%) rotate(22deg);
+  top: 30%;
+  left: 60%;
+  transform: translateX(-48%) rotate(22deg);
   transition: 0.2s linear;
   animation: animateGlass 4s linear infinite;
 
 }
 @keyframes animateGlass{
   50%{
-    width: 260px;
-    /* top: 21%; */
-    left: 51%;
+    width: 270px;
+    top: 31%;
+    left: 61%;
     background-color: rgba(225, 84, 133, 0.724);
   }
 }
 .hero-avt{
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
   height: 120%;
   object-fit: cover;
