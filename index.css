@@ -278,7 +278,7 @@ background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%
 }
 .hero-right{
   width: 50%;
-  /* overflow: hidden; */
+  overflow: hidden;
   position: relative;
 }
 .hero-right::after{
@@ -303,7 +303,7 @@ background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%
   }
 }
 .hero-avt{
-  /* position: absolute; */
+  position: absolute;
   width: 100%;
   height: 120%;
   object-fit: cover;
