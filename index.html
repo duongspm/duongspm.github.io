@@ -8,6 +8,9 @@
   <meta name="description" content="" />
   <link rel="stylesheet" href="./global.css" />
   <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet" href="./assets/css/animate.min.css" />
+  <link rel="stylesheet" href="./assets/css/flipster.css" />
+
   <title>My Website | Duongg</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -27,8 +30,10 @@
           <a class="header-nav--item" href="./pages/camper/index.html" target="_blank">Camper</a>
           <a class="header-nav--item" href="https://dunnduongg-wedding.vercel.app/blog" target="_blank">Blogs</a>
           <a class="header-nav--item" href="./pages/clock/index.html" target="_blank">Clock</a>
-          <a class="header-nav--item nav__link"  id="nav__link" href="#about">About</a>
+          <a class="header-nav--item nav__link"  id="nav__link" href="#about">About Me</a>
           <a class="header-nav--item nav__link" id="nav__link">Contact Me</a>
+          <a class="header-nav--item nav__link" id="nav__link">Skills</a>
+
         </div>
         <div class="nav__close" id="nav-close">
           <i class="fa-solid fa-xmark"></i>
@@ -38,14 +43,13 @@
         <i class="fa-solid fa-bars"></i>
       </div>
       <!-- <div class="header-right">
-       
       </div> -->
     </div>
   </div>
   
   <div class="wrapper">
     <section class="hero home" id="home">
-      <div class="hero-left">
+      <div class="hero-left animate__animated animate__bounce">
         <h1 class="hero-title">Xin Chào</h1>
         <span class="hero-title-name">
           Tran Van Duong
@@ -90,7 +94,7 @@
   <section class="bg-gray" id="about">
     <div class="wrapper">
       <div class="about" >
-        <div class="about__left">
+        <div class="about__left animate__ wow animate__backInDown">
           <div class="about__image">
             <svg class="about__blud" viewBox="0 0 550 592" fill="none" xmlns="http://www.w3.org/2000/svg">
               <mask id="maskBorder" mask-type="alpha">
@@ -122,14 +126,14 @@
                   </pattern>
             
                   <!-- Insert your profile (recommended size: 640 x 940) -->
-                  <image id="imageBorder" width="640" height="940" href=""/>
+                  <image id="imageBorder" width="640" height="940" href="./avata.png"/>
               </defs>
             </svg>
     
-            <img class="about__img" src="./avata.png" alt="">
+            
           </div>
         </div>
-        <div class="about__right">
+        <div class="about__right ">
           <div class="about__title">
             My <span>Intro</span>
           </div>
@@ -149,6 +153,87 @@
       </div>
     </div>
   </section>
+  <div class="wrapper">
+    <section class="skills" id="skills">
+      <div class="skills__left">
+        <div class="skills__title">Favorite <span>Skills</span>
+        </div>
+        <h1 class="skills__heading">
+          My Skills
+        </h1>
+        <span class="skills__desc">
+          See fully what skills I have and perform, 
+to develop the projects for you.
+        </span>
+        <div class="about__button">
+          <a href="#project">See Project</a>
+        </div>
+      </div>
+      <div class="skills__right">
+        <ol class="skills__group">
+          <li class="skills__item">HTML & CSS</li>
+          <li class="skills__item">PHP - Laravel</li>
+          <li class="skills__item">JavaScript</li>
+          <li class="skills__item">Tailwindcss</li>
+          <li class="skills__item">SCSS</li>
+        </ol>
+        <ol class="skills__group" start="6">
+          <li class="skills__item">Git & GitHub</li>
+          <li class="skills__item">ReactJS</li>
+          <li class="skills__item">MongoDB</li>
+          <li class="skills__item">Figma</li>
+          <li class="skills__item">Canva</li>
+        </ol>
+      </div>
+    </section>
+    <div class="skills__list__img" id="wheel">
+      <ul>
+          <li data-flip-title="Red">
+            <img src="./assets/images/CSS3.png">
+          </li>
+          <li data-flip-title="Razzmatazz" data-flip-category="Purples">
+            <img src="./assets/images/HTML.png">
+          </li>
+          <li data-flip-title="Deep Lilac" data-flip-category="Purples">
+            <img src="./assets/images/PHP-logo.svg.png">
+          </li>
+          <li data-flip-title="Daisy Bush" data-flip-category="Purples">
+            <img src="./assets/images/React-icon.png">
+          </li>
+          <!-- <li data-flip-title="Cerulean Blue" data-flip-category="Blues">
+              <img src="img/text5.gif">
+          </li>
+          <li data-flip-title="Dodger Blue" data-flip-category="Blues">
+              <img src="img/text6.gif">
+          </li>
+          <li data-flip-title="Cyan" data-flip-category="Blues">
+              <img src="img/text7.gif">
+          </li>
+          <li data-flip-title="Robin's Egg" data-flip-category="Blues">
+              <img src="img/text8.gif">
+          </li>
+          <li data-flip-title="Deep Sea" data-flip-category="Greens">
+              <img src="img/text9.gif">
+          </li>
+          <li data-flip-title="Apple" data-flip-category="Greens">
+              <img src="img/text10.gif">
+          </li>
+          <li data-flip-title="Pistachio" data-flip-category="Greens">
+              <img src="img/text11.gif">
+          </li>
+          <li data-flip-title="Pear" data-flip-category="Greens">
+              <img src="img/text12.gif">
+          </li>
+          <li data-flip-title="Bright Sun" data-flip-category="Yellows">
+              <img src="img/text13.gif">
+          </li>
+          <li data-flip-title="Mikado" data-flip-category="Yellows">
+              <img src="img/text14.gif">
+          </li> -->
+        </ul>
+    </div>
+
+  </div>
   <!--======================== Scroll-up ========================-->
   <a href="" class="scrollup" id="scroll-up">
     <i class="fa-solid fa-arrow-up scrollup__icon"></i>
@@ -167,6 +252,17 @@
   <script src="./assets/js/profile.js"></script>
   <script src="./assets/js/main.js"></script>
   <script src="./assets/js/scrollreveal.min.js"></script>
+  <script src="./assets/js/wow.min.js"></script>
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/flipster.js"></script>
+
+
+  <script>
+    var wheel = $("#wheel").flipster({
+        style: 'wheel',
+        spacing: 0
+    });
+  </script>
 
 
   <!-- <b>You visited this page <SCRIPT>page_counter(jcount);</SCRIPT> time(s).</b> -->
