@@ -34,6 +34,7 @@ button {
   --color-secondary:#EB6796;
   --color-heading:#3d535f;
   --header-height: 3rem;
+  --color-bg-gray: #ccc;
 
   /*========== Colors ==========*/
   --first-color: #069C54;
@@ -124,7 +125,55 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  padding: 30px;
 }
+/* add blur header */
+.blur-header{
+  background-color: transparent;
+  color: white;
+}
+.blur-header::after{
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(0,0%,10%,.3);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  top: 0;
+  left: 0;
+}
+.nav__toggle,
+.nav__close{
+  display: flex;
+  cursor: pointer;
+  font-size: 20px;
+  display: none;
+}
+
+.nav__close{
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  transition: 0.2s linear;
+  border-radius: 100%;
+
+}
+.nav__close:hover{
+  transform: rotate(180deg);
+  color: white;
+}
+/* Show menu */
+.header-middle.show-menu{
+  right: 0;
+}
+
 .header-left-logo{
   font-size: 30px;
   font-weight: 800;
@@ -164,7 +213,7 @@ body{
 }
 .header-nav--item{
   text-decoration: none;
-  color: var(--color-heading);
+  color: #000;
   font-weight: 400;
   font-size: 18px;
   transition: 0.2s linear;
@@ -172,28 +221,34 @@ body{
 .header-nav--item:hover{
   color: var(--color-secondary);
 }
-
+.active-link{
+  color: var(--color-secondary);
+}
 .social{
-  position: fixed;
-  z-index: var(--z-fixed);
-  right: 20px;
-  top: 50%;
+  padding-top: 80px;
   transform: translateY(-50%);
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
 .social a{
-  color: var(--color-heading);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  clip-path: polygon(50% 0%, 100% 20%, 100% 80%, 49% 100%, 0 80%, 0 20%);
+  background-color: var(--color-secondary);
+  color: #FFFFFF;
   font-size: 20px;
   transition: 0.2s linear;
+  text-decoration: none;
 }
 .social a:hover{
-  scale: 1.2;
-  rotate: 30deg;
-  color: var(--color-secondary);
+  scale: 1.1;
+  rotate: 15deg;
+  color: var(--color-heading);
 }
 
 .hero{
@@ -202,7 +257,7 @@ body{
   align-items: center;
   gap: 50px;
   position: relative;
-  padding-top: 40px;
+  padding: 40px 0;
 }
 .hero::before{
   content: "";
@@ -303,7 +358,7 @@ background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%
   }
 }
 .hero-avt{
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
   height: 120%;
   object-fit: cover;
@@ -336,6 +391,8 @@ background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%
   font-weight: 300;
   line-height: 25px; 
   color: var(--color-heading);
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 .button__icon{
   background:var(--color-secondary);
@@ -473,7 +530,7 @@ background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%
 .scrollup{
   position: fixed;
   right: 1rem;
-  bottom: 0;
+  bottom: -50%;
   background-color: var(--color-secondary);
   opacity: .8;
   /* padding: 10px; */
@@ -485,7 +542,7 @@ background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%
   border-radius: 3px;
   z-index: 999;
   transition: 0.2s linear;
-  bottom: 20px;
+  text-decoration: none;
 }
 .scrollup:hover{
   background-color: #e15486;
@@ -495,12 +552,133 @@ background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%
   color: floralwhite;
 }
 /* Show scroll */
-
+.show-scroll{
+  bottom: 3rem;
+}
+/* scroll bar */
+::-webkit-scrollbar{
+  width: .6rem;
+  border-radius: .5rem;
+  background-color: hsl(300, 1%, 27%);
+}
+::-webkit-scrollbar-thumb{
+  background-color: hsl(228, 8%,35%);
+  border-radius: .5rem;
+  transition: 0.2s linear;
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: hsl(228, 8%,45%);
+}
+.bg-gray{
+  /* background-color: var(--color-bg-gray); */
+  padding-top: 100px;
+}
+.about{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  gap: 70px;
+}
+.about__left{
+  width: 50%;
+  position: relative;
+}
+.about__right{
+  width: 50%;
+}
+.about__blud{
+  width: 950px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.about__img{
+  width: 410px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+  transform: translate(-50%,-50%);
+  border-bottom-left-radius: 162px;
+  border-bottom-right-radius: 162px;
+}
+.about__blud path{
+  stroke: var(--color-secondary);
+}
+.about__title{
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--color-heading);
+}
+.about__title span{
+  color: var(--color-secondary);
+}
+.about__heading{
+  color: var(--color-heading);
+  font-size: 35px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  font-weight: 700;
+}
+.about__desc{
+  color: var(--color-heading);
+  font-size: 18px;
+  line-height: 25px;
+  text-wrap: balance;
+  -webkit-text-wrap: balance;
+}
+.about__button{
+  margin-top: 40px;
+}
+.about__button a{
+  border-radius: 4px;
+  background-color: var(--color-secondary);
+  color: whitesmoke;
+  text-transform: uppercase;
+  /* font-size: 20px; */
+  text-decoration: none;
+  text-align: center;
+  padding: 15px 20px;
+  transition: 0.2s linear;
+}
+.about__button a:hover{
+  background-color: #e15486;
+}
 @media (max-width: 1200px) {
   .wrapper{
     padding: 30px;
   }
 }
+/* 320 576 768 1023*/
+@media (max-width: 1023px){
+  .nav__toggle,
+  .nav__close{
+    display: block;
+  }
+  .header-nav{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    z-index: var(--z-fixed);
+  }
+  .header-middle{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: hsla(308, 89%, 68%, 0.3);
+    width: 35%;
+    height: 100%;
+    padding: 4.5rem 0 0 3rem;
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    /* for safari */
+    transition: right .4s;
+  }
+}
+
 @media (max-width: 820px) {
   .hero{
     display: flex;
@@ -511,9 +689,7 @@ background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%
   }
 }
 @media (max-width: 420px) {
-  .header-middle{
-    display: none;
-  }
+
   .hero-right::after {
     width: 210px;
     height: 50px;
