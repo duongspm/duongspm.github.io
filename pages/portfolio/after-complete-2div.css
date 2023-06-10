@@ -1,0 +1,39 @@
+.title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.title h1{
+    font-size: 100px;
+    font-family: 'Poppins', sans-serif;
+    -webkit-text-fill-color: #f7f6ff;
+    -webkit-text-stroke: 1px #000000;
+    letter-spacing: 20px;
+    opacity: .2;
+    margin-bottom: -40px;
+}
+
+.title h2{
+    font-family: 'Inter', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    color: #292929;
+    letter-spacing: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title h2::before {
+    content: '';
+    width: 40px;
+    height: 4px;
+    background: #ea4020;
+}
+
+.title h2::after {
+    content: '';
+    width: 40px;
+    height: 4px;
+    background: #ea4020;
+}
