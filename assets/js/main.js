@@ -75,3 +75,21 @@ sr.reveal(`.hero-left, .home__img,
     interval: 200
 })
 sr.reveal(`.about`,{origin: 'bottom'})
+
+$(function() {
+	$(".test-fancybox").fancybox({
+		maxWidth	: 900,
+		maxHeight	: 600,
+		fitToView	: false,
+		width		: '90%',
+		height		: '90%',
+		autoSize	: false,
+		closeClick	: false,
+		openEffect	: 'none',
+		closeEffect	: 'none',
+    iframe: {
+	    scrolling : 'auto',
+	    preload   : true
+    }
+	});
+});
